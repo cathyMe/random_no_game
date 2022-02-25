@@ -1,0 +1,40 @@
+#!/bin/bash
+
+declare -i u_num1
+declare -i num1 
+declare -i p_num
+declare -i count=0
+
+#No. of times
+echo "How many times do you want to play?"
+read p_num
+echo "No. entered" $p_num
+
+#Loop 
+until [ $count -eq $p_num  ]
+do
+ # echo "count: "$count
+ count=count+1
+
+#Capture User Input
+echo ""
+echo "*** ** Round "$count" ** ***"
+echo ""
+echo "Enter a number between 1-5"
+read u_num1
+#Generate Random Number
+num1=$RANDOM%5
+#Compare input to random number
+#Give feedback
+
+if [ $num1 -eq $u_num1 ]; then
+ echo "Congrats"
+else
+ echo "Wrong answer. Ans: "$num1
+fi
+
+echo ""
+echo "*** ** * **  *** ** *"
+echo ""
+
+done

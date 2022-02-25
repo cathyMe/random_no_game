@@ -7,4 +7,4 @@ Tasks simulated:
 To run:
 - clone the repo
 - chmod u+x g_rnum
-Run command $ . g_rnum
+Run command $ . g_rnum or $ ./g_rnum
